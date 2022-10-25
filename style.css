@@ -195,7 +195,7 @@ body {
 
   .section-title {
     margin-top: 34px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     line-height: 52px;
@@ -206,7 +206,7 @@ body {
   }
 
   .horizontal-line {
-    margin-top: 80px;
+    margin-top: 24px;
     width: 100%;
     border: 1px solid #212121;
   }
@@ -326,7 +326,6 @@ body {
     line-height: 24px;
     font-size: 16px;
     color: #fff;
-    text-align: justify;
     width: 295;
     height: 87;
   }
@@ -452,6 +451,7 @@ body {
     display: flex;
     align-items: center;
     color: #fff;
+    margin-bottom: -200px;
   }
 
   .about-me-list {
@@ -466,7 +466,7 @@ body {
 
   .about-me-list-item {
     list-style: none;
-    margin: 24px auto;
+    margin: 10px;
     text-align: center;
     align-content: center;
   }
