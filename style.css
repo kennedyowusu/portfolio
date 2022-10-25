@@ -273,6 +273,30 @@ body {
     background-color: #fff;
   }
 
+  .card-list-item:hover {
+    background-color: #ff6b00;
+    color: #fff;
+    border:0;
+  }
+
+  .card-list-item:active {
+    background-color: #ff6b00;
+    color: #fff;
+    border: 0;
+  }
+
+  .card-list-item:visited {
+    background-color: #eb9260;
+    color: #fff;
+    border: 0;
+  }
+
+  .card-list-item:disabled {
+    background-color: #fff;
+    color: #091e42;
+    border: 0;
+  }
+
   .card-link {
     display: flex;
     justify-content: center;
