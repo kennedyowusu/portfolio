@@ -313,6 +313,21 @@ body {
     margin-bottom: 24px;
   }
 
+  .card-link:hover {
+    background-color: #ff6b00;
+    color: #fff;
+  }
+
+  .card-link:active {
+    background-color: #ff6b00;
+    color: #fff;
+  }
+
+  .card-link:visited {
+    background-color: #eb9260;
+    color: #fff;
+  }
+
   /* Second Card */
 
   .second-card {
