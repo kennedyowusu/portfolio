@@ -255,7 +255,6 @@ body {
   }
 
   .card-list {
-    display: flex;
     justify-content: start;
   }
 
@@ -270,6 +269,7 @@ body {
     border: 1px solid #8993a4;
     padding: 10px 12px;
     background-color: #fff;
+    float: right;
   }
 
   .card-list-item:hover {
