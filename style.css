@@ -625,10 +625,6 @@ body {
     margin: auto;
   }
 
-  .button:hover {
-    background: #ff6b00;
-  }
-
   .button-text {
     font-style: normal;
     font-weight: 700;
@@ -643,8 +639,21 @@ body {
     background: #ff6b00;
   }
 
-  .button-text:hover {
+  .button:hover {
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+
+  .button:active {
     background: #ff6b00;
+  }
+
+  .button:visited {
+    background-color: #eb9260;
+  }
+
+  .button:disabled {
+    background-color: #979493;
   }
 
   footer {
