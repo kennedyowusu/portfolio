@@ -29,18 +29,11 @@ body {
 }
 
 .top-section {
-  background-color: #1c1a19;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 24px;
-  gap: 12px;
-  height: 590px;
-  width: 100%;
-  color: #fff;
   background-image: url(../images/group.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  width: 100%;
+  height: 590px;
 }
 
 .title {
@@ -53,6 +46,7 @@ body {
   max-width: 600px;
   height: 124px;
   color: #ff6b00;
+  margin-top: -50px;
 }
 
 .sub-title {
@@ -63,7 +57,7 @@ body {
   width: 100%;
   max-width: 600px;
   order: 1;
-  color: #fff5e1;
+  color: #fff;
   align-items: center;
 }
 
