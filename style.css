@@ -9,113 +9,52 @@ body {
   background: #fff;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  color: #fff;
-  background-color: #3c3a39;
-  height: 92px;
-}
-
-.logo {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  width: 100px;
-  height: 24px;
-}
-
-.top-section {
-  background-image: url(../images/group.svg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  width: 100%;
-  height: 590px;
-}
-
-.title {
-  font-size: 45px;
-  line-height: 64px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.37px;
-  width: 100%;
-  max-width: 600px;
-  height: 124px;
-  color: #ff6b00;
-  margin-top: -50px;
-}
-
-.sub-title {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  line-height: 32px;
-  width: 100%;
-  max-width: 600px;
-  order: 1;
-  color: #fff;
-  align-items: center;
-}
-
-.description {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  line-height: 24px;
-  width: 100%;
-  max-width: 600px;
-  order: 2;
-}
-
-.outer-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 20%;
-  order: 3;
-  position: relative;
-}
-
-.inner-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  max-width: 100%;
-  max-width: 300px;
-  height: 50%;
-  gap: 12px;
-  list-style-type: none;
-  position: relative;
-}
-
-/* My Works Begins Here */
-
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    background-color: #3c3a39;
+    height: 92px;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 24px;
+  }
+
   .top-section {
+    background-image: url(../images/group.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    height: 590px;
     background-color: #1c1a19;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 120px 24px;
     gap: 12px;
-    height: 590px;
-    width: 100%;
     color: #fff;
   }
 
   .title {
-    font-size: 52px;
+    font-size: 45px;
     line-height: 64px;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.37px;
     width: 100%;
     max-width: 600px;
     height: 124px;
     color: #ff6b00;
+    margin-top: -50px;
   }
 
   .sub-title {
@@ -127,7 +66,7 @@ body {
     width: 100%;
     max-width: 600px;
     order: 1;
-    color: #fff5e1;
+    color: #fff;
     align-items: center;
   }
 
