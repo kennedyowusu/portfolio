@@ -9,7 +9,10 @@ body {
   background: #fff;
 }
 
-.container {
+
+
+@media screen and (max-width: 768px) {
+  .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -94,7 +97,6 @@ body {
 
 /* My Works Begins Here */
 
-@media screen and (max-width: 768px) {
   .top-section {
     background-color: #1c1a19;
     display: flex;
