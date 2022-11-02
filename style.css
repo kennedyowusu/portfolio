@@ -9,7 +9,60 @@ body {
   background: #fff;
 }
 
+.container {
+  height: 72px;
+  width: 100%;
+  background-color: #3E3C3C;
+  display: flex;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 154px;
+  margin-bottom: 26px;
+  margin-top: 26px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 151px;
+}
+
+.nav-menu li {
+  list-style-type: none;
+  margin-bottom: 26px;
+  margin-top: 26px;
+  
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  height: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  margin-right: 32px;
+}
+
+.nav-menu li a:hover {
+  color: #ff6b00;
+}
+
 @media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
   .container {
     width: 100%;
     display: flex;
@@ -24,9 +77,10 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    width: 100px;
     height: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
   }
 
   .top-section {
