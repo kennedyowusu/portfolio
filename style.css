@@ -523,7 +523,7 @@ fieldset {
   background-color: #fbf8f7;
 }
 
-.contact-me-button  {
+.contact-me-button {
   list-style-type: none;
 }
 
@@ -992,7 +992,6 @@ fieldset {
   }
 
   #contact-para {
-    text-align: left;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
