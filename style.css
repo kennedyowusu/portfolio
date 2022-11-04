@@ -40,6 +40,16 @@ body {
   margin-top: 32px;
 }
 
+#about-image {
+  display: grid;
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 1;
+  background-image: url("./images/about-me-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -50px;
+}
+
 .header-nav:hover {
   color: #f55800;
 }
@@ -953,12 +963,12 @@ fieldset {
   }
 
   #about-image {
-    display: flex;
+    display: grid;
     grid-row: 1 / span 3;
     grid-column: 2 / span 1;
     background-image: url("./images/about-me-image.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right center;
     background-size: contain;
     margin-top: -50px;
   }
