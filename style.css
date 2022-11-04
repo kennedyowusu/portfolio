@@ -130,7 +130,7 @@ a.view-work:hover {
   margin-left: 24px;
 }
 
-.media-icon > li {
+.media-icon li {
   padding-right: 20px;
 }
 
@@ -144,7 +144,7 @@ a.view-work:hover {
   transform: translate(-6.5%, 5%);
 }
 
-.tools-used-here > li {
+.tools-used-here li {
   padding: 8px;
   background-color: #999;
   font-family: 'Inter', sans-serif;
@@ -156,13 +156,19 @@ a.view-work:hover {
   border: 1px solid #3d3797;
 }
 
-ul.skill > li {
+.first-project-tools li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  height: 40px;
+}
+
+ul.skill li {
   padding: 15px;
   margin-left: -50px;
   text-align: start;
 }
 
-#social-media > li {
+#social-media li {
   padding-right: 10px;
 }
 
@@ -190,7 +196,7 @@ ul.skill > li {
   margin: 0;
 }
 
-.recent-works-title > h2 {
+.recent-works-title h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -208,15 +214,6 @@ ul.skill > li {
 
 .recent-work {
   margin-top: 50px;
-}
-
-.recent-work-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  width: 100%;
-  padding-left: 0;
 }
 
 .recent-work-view {
@@ -283,12 +280,6 @@ ul.skill > li {
   list-style: none;
 }
 
-.first-project-tools > li {
-  padding: 10px 12px;
-  border: 1px solid #8993A4;
-  height: 40px;
-}
-
 .view-work {
   background-color: #f55800;
   margin-left: -16px;
@@ -306,7 +297,7 @@ ul.skill > li {
   object-fit: contain;
 }
 
-.recent-work-pic > img {
+.recent-work-pic img {
   width: 100%;
   height: auto;
   object-fit: fill;
@@ -319,41 +310,30 @@ ul.skill > li {
 }
 
 #work-third {
-  background-image:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/sec-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/sec-image.png");
 }
 
 #fourth-work {
-  background-image:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/third-image.png");
-  
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/third-image.png");
 }
 
 #fifth-work {
-  background-image:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/first-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/first-image.png");
 }
 
 #sixth-work {
-  background-image:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/sec-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/sec-image.png");
 }
 
 #seventh-work {
-  background-image:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/third-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/third-image.png");
 }
 
 .work-title {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
   margin: 5px 0 5px 0;
 }
 
@@ -363,7 +343,7 @@ ul.skill > li {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #091E42;
+  color: #091e42;
 }
 
 #personal-data {
@@ -403,29 +383,29 @@ ul.skill > li {
   height: 48px;
 }
 
-#my-cv-here > a:active {
+#my-cv-here a:active {
   background: #e05304;
 }
 
-#my-cv-here > a:hover {
+#my-cv-here a:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
-#my-cv-here > a:disabled {
+#my-cv-here a:disabled {
   background: #f4f1f0;
   border: none;
   color: #5b5957;
 }
 
-#my-cv-here > a:enabled {
+#my-cv-here a:enabled {
   background: #f55800;
   border: 1px solid #f55800;
   color: #fff;
 }
 
-#my-cv-here > h2 {
+#my-cv-here h2 {
   color: #f55800;
   font-style: normal;
   font-weight: 400;
@@ -433,7 +413,7 @@ ul.skill > li {
   line-height: 82px;
 }
 
-#my-cv-here > p {
+#my-cv-here p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -448,7 +428,7 @@ ul.skill > li {
   padding: 120px 0 0 0;
 }
 
-#my-skills > ul {
+#my-skills ul {
   font-size: 35px;
   float: center;
   text-indent: -30px;
@@ -532,7 +512,7 @@ fieldset {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .submit-button {
@@ -589,7 +569,7 @@ input:focus {
   margin: 100px 0 0 0;
 }
 
-#contact-social-media > li {
+#contact-social-media li {
   padding-right: 15px;
 }
 
@@ -612,7 +592,8 @@ input:focus {
     width: 100%;
     height: auto;
   }
-.nav-icon img {
+
+  .nav-icon img {
     display: none;
   }
 
@@ -620,7 +601,6 @@ input:focus {
     position: fixed;
     width: 100%;
     height: 72px;
-    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -638,11 +618,11 @@ input:focus {
     color: #fff;
   }
 
-  .media-icon > li {
+  .media-icon li {
     padding-bottom: 20px;
   }
 
-  .tools-used-here > li {
+  .tools-used-here li {
     padding: 8px;
     background-color: #999;
     border: 0;
@@ -653,7 +633,17 @@ input:focus {
     height: 40px;
   }
 
-  .navbar > ul > li {
+  .first-project-tools > li {
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    flex-grow: 0;
+    color: #000;
+    height: 40px;
+    border: 1px solid #3d3797;
+  }
+
+  .navbar ul li {
     padding-left: 20px;
     color: #fff;
   }
@@ -674,7 +664,6 @@ input:focus {
   }
 
   .hero-title {
-    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-size: 72px;
     font-weight: 400;
@@ -685,7 +674,6 @@ input:focus {
   }
 
   .hero-sub-title {
-    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -850,16 +838,6 @@ input:focus {
     padding-left: 0;
     gap: 10px;
     margin-bottom: 30px 0;
-  }
-
-  .first-project-tools > li {
-    padding: 8px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    flex-grow: 0;
-    color: #000;
-    height: 40px;
-    border: 1px solid #3d3797;
   }
 
   .recent-work-view {
