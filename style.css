@@ -130,6 +130,9 @@ body {
 .my-works {
   width: 100%;
   display: grid;
+  /* height: 1000px; */
+  /* margin-top: -200px; */
+  background: green;
 }
 
 .recent-works-text {
@@ -234,6 +237,15 @@ body {
 }
 
 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 90px;
+  margin-right: 40px;
+  margin-top: -24px;
+  gap: 10px;
+}
+
+.grid-container-second-set{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left: 90px;
