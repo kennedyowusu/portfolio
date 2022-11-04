@@ -10,46 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-#about-lang {
-  display: flex;
-  padding-left: 60px;
-}
-
-#about-me-rectangle {
-  padding-right: 12px;
-}
-
-#lang-list {
-  list-style-type: none;
-  margin-left: -35px;
-  text-align: start;
-  margin-top: -1px;
-  margin-bottom: 20px;
-}
-
-#lang-list li {
-  margin-bottom: 20px;
-  margin-left: 100px;
-  text-align: justify;
-}
-
-#about-hori-line {
-  border: 1px solid #fff;
-  width: 90%;
-  margin-bottom: 56px;
-  margin-top: 32px;
-}
-
-#about-image {
-  display: grid;
-  grid-row: 1 / span 3;
-  grid-column: 2 / span 1;
-  background-image: url("./images/about-me-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -50px;
-}
-
 .header-nav:hover {
   color: #f55800;
 }
@@ -184,7 +144,7 @@ a.view-work:hover {
   transform: translate(-6.5%, 5%);
 }
 
-.other-tools-used> li {
+.other-tools-used > li {
   padding: 8px;
   background-color: #999;
   font-family: 'Inter', sans-serif;
@@ -301,7 +261,7 @@ ul.skill > li {
   display: none;
 }
 
-.other-tools-used{
+.other-tools-used {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -364,33 +324,23 @@ ul.skill > li {
 }
 
 #third-work {
-  background:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/sec-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/sec-image.png");
 }
 
-#fourth-work{
-  background:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/third-image.png");
+#fourth-work {
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/third-image.png");
 }
 
-#fifth-work{
-  background:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/four-image.png");
+#fifth-work {
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/four-image.png");
 }
 
-#sixth-work{
-  background:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/sec-image.png");
+#sixth-work {
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/sec-image.png");
 }
 
 #seventh-work {
-  background:
-    linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),
-    url("./images/works/third-image.png");
+  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./images/works/third-image.png");
 }
 
 .work-title-here {
@@ -573,33 +523,22 @@ fieldset {
   background-color: #fbf8f7;
 }
 
-#submit {
-  background-color: #f55800;
-  font-weight: bold;
-  width: 50%;
-  height: 40px;
+.contact-me-button  {
+  list-style-type: none;
+}
+
+.submit-button {
   text-align: center;
   text-decoration-line: none;
-  padding: 10px;
   color: #fff;
-  margin: 0 auto;
-  border: 0;
-}
-
-#submit:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-#submit:active {
-  background: #f55800;
-}
-
-#submit:disabled {
-  background: #f4f1f0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55800;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 150px;
+  height: 40px;
   border: none;
-  color: #5b5957;
 }
 
 #contact-social-media {
@@ -616,6 +555,46 @@ fieldset {
 
 #contact-social-media > li {
   padding-right: 15px;
+}
+
+#about-lang {
+  display: flex;
+  padding-left: 60px;
+}
+
+#about-me-rectangle {
+  padding-right: 12px;
+}
+
+#lang-list {
+  list-style-type: none;
+  margin-left: -35px;
+  text-align: start;
+  margin-top: -1px;
+  margin-bottom: 20px;
+}
+
+#lang-list li {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+#about-hori-line {
+  border: 1px solid #fff;
+  width: 90%;
+  margin-bottom: 56px;
+  margin-top: 32px;
+}
+
+#about-image {
+  display: grid;
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 1;
+  background-image: url("./images/about-me-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -646,6 +625,26 @@ fieldset {
     text-align: start;
     margin-top: -1px;
     margin-bottom: 20px;
+  }
+
+  .hero-social-media-icon > li {
+    padding-bottom: 20px;
+  }
+
+  .other-tools-used > li {
+    padding: 8px;
+    background-color: #999;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    flex-grow: 0;
+    color: #fff;
+    height: 40px;
+  }
+
+  .navbar > ul > li {
+    padding-left: 20px;
+    color: #fff;
   }
 
   #lang-list li {
@@ -695,26 +694,6 @@ fieldset {
     text-align: center;
     padding-inline-start: 0;
     list-style: none;
-    color: #fff;
-  }
-
-  .hero-social-media-icon > li {
-    padding-bottom: 20px;
-  }
-
-  .other-tools-used> li {
-    padding: 8px;
-    background-color: #999;
-    border: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    flex-grow: 0;
-    color: #fff;
-    height: 40px;
-  }
-
-  .navbar > ul > li {
-    padding-left: 20px;
     color: #fff;
   }
 
@@ -906,7 +885,7 @@ fieldset {
     color: #fff;
   }
 
-  .other-works > .other-tools-used{
+  .other-tools-used {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1014,16 +993,16 @@ fieldset {
 
   #contact-para {
     text-align: left;
-    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 52px;
     display: flex;
     justify-content: flex-end;
     color: #262626;
     margin-left: 0;
     padding-left: 130px;
+    text-align: start;
   }
 
   #contact-me-form {
@@ -1086,17 +1065,28 @@ fieldset {
     background-color: #fbf8f7;
   }
 
-  #submit {
-    display: block;
-    background-color: #f55800;
+  .contact-me-button {
+    display: flex;
     font-weight: bold;
-    width: 50%;
     height: 40px;
+  }
+
+  .submit-button {
     text-align: center;
     text-decoration-line: none;
-    padding: 10px;
     color: #fff;
-    margin: 0 auto;
-    border: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f55800;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    border: none;
+  }
+
+  .submit-button:hover {
+    border: 1px solid #f55800;
+    background-color: #fff;
+    color: #000;
   }
 }
