@@ -23,132 +23,126 @@
   
   <body>
     <header class="header">
-      <nav class="navbar">
-        <!-- LOGO -->
-        <a href="#">Kennedy Owusu</a>
-
-        <a class="nav-icon" href="">
-          <img src="./images/nav-icons/nav-icon.png">
-        </a>
+      <nav id="navbar" class="navbar">
+        <a href="">Kennedy Owusu</a>
+        <a id="menu-icon" href=""><img src="./images/nav-icons/nav-icon.png"></a>
         <ul>
+          <li><a class="header-nav" href="">Portfolio</a></li>
+          <li><a class="header-nav" href="">About</a></li>
+          <li><a class="header-nav" href="">Contact</a></li>
+          <li><a class="header-nav" href=""><img src="./images/nav-icons/mail-icon.png"></a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1 id="hero-title">Hey There. I'm Kennedy</h1>
+        <h4 id="hero-sub-title">I am a Software Developer</h4>
+        <p id="hero-info">I can help you build a product, feature or website look through some of my
+          work and experience. If you like what you see and have a project you need coded, don't
+          hesitate to contact me.</p>
+        <ul class="hero-social-media-icon">
           <li>
-            <a class="nav-list-item" href="">Portfolio</a>
+            <a href="" >
+              <img src="./images/social-icons/hero-section/github.png" width="17px" height="20px">
+            </a>
           </li>
 
           <li>
-            <a class="nav-list-item" href="">About</a>
+            <a href="">
+              <img src="./images/social-icons/hero-section/linkedIn.png" width="17px" height="20px">
+            </a>
           </li>
 
           <li>
-            <a class="nav-list-item" href="">Contact</a>
+            <a href="">
+              <img src="./images/social-icons/hero-section/angelist.png" width="17px" height="20px">
+            </a>
           </li>
 
           <li>
-            <a class="nav-list-item" href=""><img src="./images/nav-icons/mail-icon.png">
+            <a href="">
+              <img src="./images/social-icons/hero-section/twitter.png" width="17px" height="20px">
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <img src="./images/social-icons/hero-section/medium.png" width="17px" height="20px">
             </a>
           </li>
 
         </ul>
-      </nav>
 
-      <div class="hero">
-
-        <h1 class="hero-title">Hey There. I'm Kennedy</h1>
-
-        <h4 class="hero-sub-title">I am a Software Developer</h4>
-
-        <p class="hero-description">I can help you build a product, feature or website look through some of my
-          work and experience. If you like what you see and have a project you need coded, don't
-          hesitate to contact me.
-        </p>
-
-        <ul id="hero-social-media" class="media-icon">
-          <li><a href="#"><img src="./images/social-icons/hero-section/github.png"></a></li>
-          <li><a href="#"><img src="./images/social-icons/hero-section/linkedIn.png"></a></li>
-          <li><a href="#"><img src="./images/social-icons/hero-section/angelist.png"></a></li>
-          <li><a href="#"><img src="./images/social-icons/hero-section/twitter.png"></a></li>
-          <li><a href="#"><img src="./images/social-icons/hero-section/medium.png"></a></li>
-        </ul>
-
-        <!-- Side bar Image for Hero Section -->
-        <div class="hero-image">
-
-        </div>
-
+        <div class="hero-image"></div>
       </div>
-
     </header>
 
-    <!-- Recent Works Section Starts Here -->
+    <section id="recent-works">
 
-    <section class="recent-works-section">
-
-      <div class="recent-works-title">
+      <div id="recent-work-title">
         <h2>My Recent Works</h2>
       </div>
 
-      <article class="recent-work">
+      <article id="first-work">
 
-        <div class="recent-work-pic"><img src="./images/works/first_works.png"></div>
-
-        <div class="recent-work-details">
-
-          <h3 class="work-title">Multi Post Stories</h3>
-
-          <p class="works-description">
+        <div id="first-work-image">
+          <img src="./images/works/first_works.png">
+        </div>
+        
+        <div id="first-work-details">
+          <h3 class="work-title-here-feature" style="color: #091E42;">Multi Post Stories</h3>
+          <p class="description" style="color: #091E42">
             A daily selection of privately personalized reads; no accounts or sign-ups required.
             has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a standard dummy text.
           </p>
-
-          <ul class="first-project-tools">
+          <ul id="tools-used">
             <li>CSS</li>
             <li>HTML</li>
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-
-          <a class="recent-work-view" href="">See Project</a>
-          
+          <a id="open-work-view" href="">See Project</a>
         </div>
 
       </article>
 
-      <div class="feature-work">
-        <a class="see-this-project" href="">See Project</a>
-      </div>
+      <article class="feature-work">
+
+        <a id="view-featured-work" href="">See Project</a>
+
+      </article>
+
+      <article id="third-work" class="other-works">
+
+        <h3 class="work-title-here">Data Dashboard Healthcare</h3>
+        <p class="description">
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
+          has been the industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a standard dummy text.
+        </p>
+
+        <ul class="other-tools-used">
+          <li>HTML</li>
+          <li>Bootstrap</li>
+          <li>Ruby</li>
+        </ul>
+
+        <a class="view-work" href="">See Project</a>
+
       
-      <article id="work-third" class="more-of-my-works">
-
-        <h3 class="work-title">Data Dashboard Healthcare</h3>
-
-        <p class="works-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-          has been the industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a standard dummy text.
-        </p>
-
-        <ul class="tools-used-here">
-          <li>HTML</li>
-          <li>Bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-
-        <a class="view-work" href="">See Project</a>
-        
       </article>
 
-      <article id="fourth-work" class="more-of-my-works">
+      <article id="fourth-work" class="other-works">
 
-        <h3 class="work-title">Website Portfolio</h3>
-        
-        <p class="works-description">
+        <h3 class="work-title-here">Website Portfolio</h3>
+
+        <p class="description">
           A daily selection of privately personalized reads; no accounts or sign-ups required.
           has been the industry's standard dummy text ever since the 1500s, when an unknown
           printer took a standard dummy text.
         </p>
 
-        <ul class="tools-used-here">
+        <ul class="other-tools-used">
           <li>HTML</li>
           <li>Bootstrap</li>
           <li>Ruby</li>
@@ -158,17 +152,17 @@
 
       </article>
 
-      <article id="fifth-work" class="more-of-my-works">
-        
-        <h3 class="work-title">Professional Art Printing Data More</h3>
+      <article id="fifth-work" class="other-works">
 
-        <p class="works-description">
+        <h3 class="work-title-here">Professional Art Printing Data More</h3>
+
+        <p class="description">
           A daily selection of privately personalized reads; no accounts or sign-ups required.
           has been the industry's standard dummy text ever since the 1500s, when an unknown
           printer took a standard dummy text.
         </p>
 
-        <ul class="tools-used-here">
+        <ul class="other-tools-used">
           <li>HTML</li>
           <li>Bootstrap</li>
           <li>Ruby</li>
@@ -178,17 +172,36 @@
 
       </article>
 
-      <article id="sixth-work" class="more-of-my-works">
+      <article id="sixth-work" class="other-works">
         
-        <h3 class="work-title">Data Dashboard Healthcare</h3>
+        <h3 class="work-title-here">Data Dashboard Healthcare</h3>
 
-        <p class="works-description">
+        <p class="description">
           A daily selection of privately personalized reads; no accounts or sign-ups required.
           has been the industry's standard dummy text ever since the 1500s, when an unknown
           printer took a standard dummy text.
         </p>
 
-        <ul class="tools-used-here">
+        <ul class="other-tools-used">
+          <li>HTML</li>
+          <li>Bootstrap</li>
+          <li>Ruby</li>
+        </ul>
+
+        <a class="view-work" href="">See Project</a>
+        
+      </article>
+
+      <article id="seventh-work" class="other-works">
+        
+        <h3 class="work-title-here">Website Portfolio</h3>
+
+        <p class="description">
+          A daily selection of privately personalized reads; no accounts or sign-ups required.
+          has been the industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a standard dummy text.
+        </p>
+        <ul class="other-tools-used">
           <li>HTML</li>
           <li>Bootstrap</li>
           <li>Ruby</li>
@@ -198,48 +211,22 @@
 
       </article>
 
-      <article id="seventh-work" class="more-of-my-works">
-        
-        <h3 class="work-title">Website Portfolio</h3>
-
-        <p class="works-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required.
-          has been the industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a standard dummy text.
-        </p>
-
-        <ul class="tools-used-here">
-          <li>HTML</li>
-          <li>Bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-
-        <a class="view-work" href="">See Project</a>
-
-      </article>
     </section>
-
-    <!-- Recent Works Section Ends Here -->
-
-    <!-- About Me Section Starts Here -->
 
     <section id="personal-data">
 
-      <div id="my-cv-here">
+      <div id="resume">
         <h2>About me</h2>
         <p>
           I am a Software Developer. I can help you build a product, feature or website look through some of my
           work and experience. If you like what you see and have a project you need coded, don't hesitate to
           contact me.
         </p>
-        <a class="card-link" href="#">Get My Resume</a>
-        <div id="image"></div>
+        <a href="">Get My Resume</a>
+        <div id="about-image"></div>
       </div>
-
-      <div id="my-skills">
-        
-        <ul>
-          
+      <div id="skills">
+        <ul class="prog-lang">
           <li>Language
             <ul class="skill">
               <li>Javascript</li>
@@ -249,8 +236,7 @@
             </ul>
           </li>
         </ul>
-
-        <ul>
+        <ul class="prog-fram">
           <li>Frameworks
             <ul class="skill">
               <li>Bootstrap</li>
@@ -261,8 +247,7 @@
             </ul>
           </li>
         </ul>
-
-        <ul>
+        <ul class="prog-skil">
           <li>Skills
             <ul class="skill">
               <li>Codekit</li>
@@ -273,73 +258,36 @@
             </ul>
           </li>
         </ul>
-
       </div>
 
     </section>
 
-    <!-- About Me Section Ends Here -->
-
-    <!-- Contact Me Section Ends Here -->
     <section class="contact-me">
 
-      <h2 class="contact-text">I'm always interested in hearing about new projects,
+      <h2 id="contact-para">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.</h2>
-
-      <form id="contact-me-form" action="https://formspree.io/f/xbjbpojv" method="POST">
-
+      <form id="contact-me-form" action="https://formspree.io/f/xbjbpojv" method="post">
         <fieldset>
-
-          <input type="text" id="email" name="email" placeholder="Full Name" required />
-
-          <input type="email" id="email" name="email" placeholder="Email Address" required />
-          
-          <textarea id="message" class="form-message" name="message" required class="text-area" placeholder="Hello Mariane. Glad to see you |">
+          <div class="person-name">
+            <input type="text" id="firstname" name="firstname" maxlength="30" required
+              placeholder="First Name" />
+            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last Name" required />
+          </div>
+          <input type="text" id="name" name="fullname" maxlength="30" required placeholder="Full name" />
+          <input type="email" id="email" name="email" placeholder="Email address" required />
+          <textarea id="msg" class="form-msg" name="msg" required placeholder="Hello Mariane. Glad to see you |">
             </textarea>
-
-        <div class="submit-button">
           <input type="submit" id="submit" value="Get in touch">
-        </div>
-
         </fieldset>
-
       </form>
-
       <ul id="contact-social-media">
-
-        <li>
-          <a href="">
-            <img src="./images/social-icons/footer/footer-github.png">
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            <img src="./images/social-icons/footer/footer-linkedIn.png">
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            <img src="./images/social-icons/footer/footer-angelist.png">
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            <img src="./images/social-icons/footer/footer-twitter.png">
-          </a>
-        </li>
-
-        <li>
-          <a href="">
-            <img src="./images/social-icons/footer/footer-medium.png">
-          </a>
-        </li>
-
+        <li><a href=""><img src="./images/social-icons/footer/footer-github.png"></a></li>
+        <li><a href=""><img src="./images/social-icons/footer/footer-linkedIn.png"></a></li>
+        <li><a href=""><img src="./images/social-icons/footer/footer-angelist.png"></a></li>
+        <li><a href=""><img src="./images/social-icons/footer/footer-twitter.png"></a></li>
+        <li><a href=""><img src="./images/social-icons/footer/footer-medium.png"></a></li>
       </ul>
     </section>
-    <!-- Contact Me Section Ends Here -->
   </body>
 
 </html>
