@@ -10,6 +10,36 @@ body {
   overflow-x: hidden;
 }
 
+#about-lang {
+  display: flex;
+  padding-left: 60px;
+}
+
+#about-me-rectangle {
+  padding-right: 12px;
+}
+
+#lang-list {
+  list-style-type: none;
+  margin-left: -35px;
+  text-align: start;
+  margin-top: -1px;
+  margin-bottom: 20px;
+}
+
+#lang-list li {
+  margin-bottom: 20px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+#about-hori-line {
+  border: 1px solid #fff;
+  width: 90%;
+  margin-bottom: 56px;
+  margin-top: 32px;
+}
+
 .header-nav:hover {
   color: #f55800;
 }
@@ -582,6 +612,40 @@ fieldset {
   body {
     margin: 0;
     overflow-x: hidden;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-lang {
+    display: flex;
+  }
+
+  .about-me-rectangle {
+    padding-right: 12px;
+  }
+
+  .lang-list {
+    list-style-type: none;
+    margin-left: -35px;
+    text-align: start;
+    margin-top: -1px;
+    margin-bottom: 20px;
+  }
+
+  #lang-list li {
+    margin-bottom: 20px;
+    padding-right: -50px;
+    margin-left: 50px;
+  }
+
+  .about-hori-line {
+    margin-right: 200px;
   }
 
   .view-work {
