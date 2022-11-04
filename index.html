@@ -283,21 +283,23 @@
     <!-- Contact Me Section Ends Here -->
     <section class="contact-me">
 
-      <h2 id="contact-para">I'm always interested in hearing about new projects,
+      <h2 class="contact-text">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.</h2>
 
       <form id="contact-me-form" action="https://formspree.io/f/xbjbpojv" method="POST">
 
         <fieldset>
 
-          <input type="text" id="name" name="name" placeholder="Full Name" required />
+          <input type="text" id="email" name="email" placeholder="Full Name" required />
 
           <input type="email" id="email" name="email" placeholder="Email Address" required />
           
-          <textarea id="message" class="form-message" name="message" required>Enter text here
+          <textarea id="message" class="form-message" name="message" required class="text-area" placeholder="Hello Mariane. Glad to see you |">
             </textarea>
 
+        <div class="submit-button">
           <input type="submit" id="submit" value="Get in touch">
+        </div>
 
         </fieldset>
 
