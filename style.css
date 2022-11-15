@@ -19,6 +19,11 @@ body {
   .hamburger {
     cursor: pointer;
     display: block;
+    padding: 20px; 
+    z-index: 10;  
+    position: absolute;  
+    right: 0;  
+    top: 0;
   }
 
   .bar {
@@ -687,6 +692,10 @@ fieldset {
   .header-nav {
     text-decoration: none;
     color: #fff;
+  }
+
+  #navbar-title {
+    display: none;
   }
 }
 
