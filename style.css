@@ -20,6 +20,7 @@ body {
 }
 
 /* Hamburger Starts Here */
+
 .hamburger {
   cursor: pointer;
   display: block;
@@ -71,30 +72,30 @@ body {
   line-height: 24px;
 }
 
-.navbar > ul {
-  display: none;
+#mobile-menu-list{
+  position: static;
+  left: -100%;
+  margin-top: 47px;
+  gap: 0;
+  flex-direction: column;
+  background: #3C3A39;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-item{
+  margin: 16px 0;;
+}
+
+#mobile-menu-list.active {
+  left: 0;
 }
 
 .navbar-title {
   text-decoration-line: none;
   color: #fff;
 }
-
-/* #navbar-title {
-  position: absolute;
-  height: 24px;
-  left: 0px;
-  right: 68px;
-  top: calc(50% - 24px/2);
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  color: #FFF5E1;
-} */
 
 .hide-mobile-menu {
   display: none;
@@ -674,14 +675,13 @@ fieldset {
     z-index: 10;
     background: #3c3a39;
     width: 100%;
-    padding: 20px;
-    height: 100%;
+    height: 1%;
   }
 
-  #mobile-navbar > div {
+  /* #mobile-navbar > div {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   #mobile-navbar > ul > li {
     list-style-type: none;
@@ -692,7 +692,7 @@ fieldset {
     color: #fff;
   }
 
-  .mobile-menu-list {
+  .mobile-menu-list-portfolio, .mobile-menu-list-about, .mobile-menu-list-contact {
     text-decoration: none;
     color: #fff5e1;
     font-style: normal;
@@ -701,7 +701,6 @@ fieldset {
     line-height: 44px;
     height: 24px;
     padding-right: 68px;
-    padding-top: calc(50% - 24px / 2);
   }
 
   .hamburger-line {

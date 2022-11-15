@@ -25,7 +25,6 @@
     <header class="header">
       <nav id="navbar" class="navbar">
         <a class="navbar-title" href="">Kennedy Owusu</a>
-        <!-- <a id="menu-icon" href=""><img src="./images/nav-icons/nav-icon.png"></a> -->
         <ul>
           <li><a class="header-nav" href="">Portfolio</a></li>
           <li><a class="header-nav" href="">About</a></li>
@@ -49,11 +48,16 @@
         </div>
 
         <ul class="hide-mobile-menu" id="mobile-menu-list">
-          <li><a class="mobile-menu-list" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="mobile-menu-list-portfolio" href="#recent-works">Portfolio</a></li>
+
           <hr class="hamburger-line">
-          <li><a class="mobile-menu-list" href="#">About</a></li>
+
+          <li class="nav-item"><a class="mobile-menu-list-about" href="#personal-data">About</a></li>
+
           <hr class="hamburger-line">
-          <li><a class="mobile-menu-list" href="#">Contact</a></li>
+
+          <li class="nav-item"><a class="mobile-menu-list-contact" href="#contact">Contact</a></li>
+          
           <hr class="hamburger-line">
         </ul>
 
@@ -351,7 +355,7 @@
     
     </section>
 
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
 
       <h2 id="contact-para">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.</h2>
