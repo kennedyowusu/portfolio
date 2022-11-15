@@ -11,53 +11,52 @@ body {
   position: relative;
 }
 
+.header-nav {
+  margin: 16px 0;
+}
+
 .header-nav:hover {
   color: #f55800;
 }
 
 /* Hamburger Starts Here */
-  .hamburger {
-    cursor: pointer;
-    display: block;
-    padding: 20px; 
-    z-index: 10;  
-    position: absolute;  
-    right: 0;  
-    top: 0;
-  }
+.hamburger {
+  cursor: pointer;
+  display: block;
+  padding: 20px;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-  .bar {
-    background-color: #67798E;
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-  }
+.bar {
+  background-color: #67798e;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-  .header-nav {
-    margin: 16px 0;
-  }
+.navbar.active {
+  left: 0;
+}
 
-  .navbar.active {
-    left: 0;
-  }
-
-  .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +96,7 @@ body {
   color: #FFF5E1;
 } */
 
-.hide-mobile-menu{
+.hide-mobile-menu {
   display: none;
 }
 
@@ -663,10 +662,9 @@ fieldset {
   margin-top: -50px;
 }
 
-/* MOBILE VIEW*/
+/* MOBILE VIEW */
 
 @media screen and (max-width: 375px) {
-
   #navbar {
     display: none;
   }
@@ -674,18 +672,18 @@ fieldset {
   #mobile-navbar {
     position: absolute;
     z-index: 10;
-    background: #3C3A39;
+    background: #3c3a39;
     width: 100%;
     padding: 20px;
     height: 100%;
   }
 
   #mobile-navbar > div {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
   }
 
-  #mobile-navbar > ul > li  {
+  #mobile-navbar > ul > li {
     list-style-type: none;
   }
 
@@ -697,14 +695,13 @@ fieldset {
   .mobile-menu-list {
     text-decoration: none;
     color: #fff5e1;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     height: 24px;
     padding-right: 68px;
-    padding-top: calc(50% - 24px/2);
+    padding-top: calc(50% - 24px / 2);
   }
 
   .hamburger-line {
