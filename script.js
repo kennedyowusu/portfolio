@@ -1,15 +1,28 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('#mobile-navbar');
-const mobileMenuList = document.querySelector('#mobile-menu-list');
+const navMenu = document.querySelector('.mobile-menu');
+const headerItem = document.getElementsByClassName('header-item');
+const cancelIcon = document.querySelector('.cancel');
+const menuItem = document.getElementsByClassName('mobile-menu-items');
+const hamburger = document.querySelector('.header-navbar');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+  Array.from(headerItem).forEach((element) => {
+    element.classList.toggle('active');
+  });
   navMenu.classList.toggle('active');
-  mobileMenuList.classList.toggle('hide-mobile-menu');
 });
 
-document.querySelectorAll('.hide-mobile-menu').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-  mobileMenuList.classList.remove('hide-mobile-menu');
-}));
+cancelIcon.addEventListener('click', () => {
+  Array.from(headerItem).forEach((element) => {
+    element.classList.toggle('active');
+  });
+  navMenu.classList.toggle('active');
+});
+
+Array.from(menuItem).forEach((element) => {
+  element.addEventListener('click', () => {
+    Array.from(headerItem).forEach((element) => {
+      element.classList.toggle('active');
+    });
+    navMenu.classList.toggle('active');
+  });
+});
