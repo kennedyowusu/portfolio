@@ -474,33 +474,48 @@ ul.skill > li {
   color: #fff;
 }
 
-#resume > h2 {
-  color: #f55800;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 82px;
-  flex-grow: 0;
-}
+  .about-me-title {
+    width: 327px;
+    height: 79px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    margin: 40px;
+  }
 
-#resume > p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-}
+  .about-me-para{
+    width: 327px;
+    height: 148px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f4f5f7;
+    margin: 40px;
+    margin-top: 1rem;
+  }
 
-#skills {
-  border-top: 1px solid #888;
-  padding: 120px 0 0 0;
-  clear: both;
-  text-align: center;
-  font-weight: 400;
-  margin: 0;
-}
+  .about-me-button {
+    gap: 10px;
+    width: 161px;
+    height: 48px;
+    background: #ff6b00;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+    margin-bottom: 12rem;
+    align-self: baseline;
+    margin-left: calc((100% - 327px) / 2);
+  }
 
 #skills > ul {
   list-style-position: inside;
@@ -1133,7 +1148,31 @@ fieldset {
     color: #f4f5f7;
   }
 
-  #skills {
+  .about-me-button {
+    gap: 10px;
+    width: 161px;
+    height: 48px;
+    background: #ff6b00;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    align-self: baseline;
+    margin-bottom: 8rem;
+    border: none;
+  }
+
+  .about-me-line {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .l-f-s {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
