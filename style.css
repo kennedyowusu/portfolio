@@ -675,13 +675,8 @@ fieldset {
     z-index: 10;
     background: #3c3a39;
     width: 100%;
-    height: 1%;
+    height: 0%;
   }
-
-  /* #mobile-navbar > div {
-    display: flex;
-    justify-content: space-between;
-  } */
 
   #mobile-navbar > ul > li {
     list-style-type: none;
@@ -717,6 +712,57 @@ fieldset {
     display: none;
   }
 }
+
+/* Mini Mobile */
+
+@media screen and (max-width: 540px) {
+  #navbar {
+    display: none;
+  }
+
+  #mobile-navbar {
+    position: absolute;
+    z-index: 10;
+    background: #3c3a39;
+    width: 70%;
+    height: 0%;
+  }
+
+  #mobile-navbar > ul > li {
+    list-style-type: none;
+  }
+
+  .header-nav {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mobile-menu-list-portfolio,
+  .mobile-menu-list-about,
+  .mobile-menu-list-contact {
+    text-decoration: none;
+    color: #fff5e1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    height: 24px;
+    padding-right: 68px;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 1px;
+    background: #6f6c6b;
+    margin-left: -16px;
+    padding: 0 10px;
+  }
+
+  #navbar-title {
+    display: none;
+  }
+}
+
 
 /* DESKTOP VIEW */
 
