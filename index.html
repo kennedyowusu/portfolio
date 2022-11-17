@@ -20,216 +20,286 @@
     rel="stylesheet"
   />
 </head>
-  
-  <body>
 
-  <header class="header-container">
-    <a href="" class="header-item header-title"><h3 id="name">Kennedy Owusu</h3></a>
-    <nav href="" class="header-item header-navbar"><img class="header-item" id="tab" src="./images/nav-icons/nav-icon.png" alt="tab"></nav>
-    <a href="" class="header-item header-portfolio">Portfolio</a>
-    <a href="" class="header-item header-about">About</a>
-    <a href="" class="header-item header-contact">Contact</a>
-    <a href="" class="header-item header-mail"><img id="email" src="./images/nav-icons/email.png" alt="email"></a>
+<body>
 
-    <div class="mobile-menu">
-      <img src="./images/nav-icons/cancel.png" class="cancel"/>
-      <ul class="mobile-menu-items">
-        <li><a href="#portfolio" class="item_m">Portfolio</a></li>
-        <hr>
-        <li><a href="#about" class="item_m">About</a></li>
-        <hr>
-        <li><a href="#contact" class="item_m">Contact</a></li>
-        <hr>
+    <!-- FOR MOBILE MENU ICON TO HELP OPEN AND CLOSE IT DYNAMICALLY -->
+
+    <section class="mobile-nav-icon">
+      <img src="images/all-mobile-images/cancel.svg" alt="" onclick="dismissMobileMenu()" id="cancel" />
+      <ul>
+        <li class="mobile-nav-icon-items" onclick="dismissMobileMenu()">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-nav-icon-items" onclick="dismissMobileMenu()">
+          <a href="#about">About</a>
+        </li>
+        <li><hr /></li>
+        <li class="mobile-nav-icon-items" onclick="dismissMobileMenu()">
+          <a href="#contact">Contact</a>
+        </li>
+        <li><hr /></li>
       </ul>
-    </div>
+    </section>
+
+    <div class="menu-footer"><img src="images/all-mobile-images/horizontal-line.svg" alt="" /></div>
+
+    <header>
+
+      <nav class="navbar-holder">
+        <a href="#" class="left-menu-item">Kennedy Owusu</a>
+        <section class="desktop-version">
+          <a href="#portfolio" class="desktop-right-menu-item"
+            >Portfolio</a
+          >
+          <a href="#about" class="desktop-right-menu-item">About</a>
+          <a href="#contact" class="desktop-right-menu-item">Contact</a>
+          <a
+            href="#"
+            class="desktop-right-menu-item"
+          >
+            <img src="images/all-desktop/mail.svg" alt="Email Icon"/>
+          </a>
+        </section>
+
+        <section class="mobile-only" id="hamburger">
+          <img
+            src="images/all-mobile-images/hamburger.svg"
+            alt="Hamburger Icon"
+            class="right-menu-item"
+            onclick="openMobileMenu()"
+          />
+        </section>
+      </nav>
+
+    </header>
+
+    <!-- Pop up here -->
     
-  </header>
+    <section class="popup">
+      <!-- Use JavaScript to dynamically generates the content here -->
+    </section>
 
-  <!-- HERO SECTION STARTS HERE -->
-  <section class="hero-section">
-    <div class="hero-content-left hero-section-item">
-      <h1 class="hero-section-item" id="hero-title">Hey There. I'm Kennedy</h1>
-      <h2 class="hero-section-item" id="hero-subtitle">I’m a Software Developer</h2>
-      <p class="hero-section-item" id="hero-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hesitate to contact me.</p>  
-    </div>
-    <ul class="hero-section-item icon-container">
-      <li><a href="" class="icon-element" type="button"><img src="./images/social-icons/hero-section/github.png" alt="Github"></a></li>
-      <li><a href="" class="icon-element" type="button"><img src="./images/social-icons/hero-section/linkedIn.png" alt="LinkedIn">
-        </a></li>
-      <li><a href="" class="icon-element" type="button"><img src="./images/social-icons/hero-section/angelist.png" alt="Angelist"></a></li>
-      <li><a href="" class="icon-element" type="button"><img src="./images/social-icons/hero-section/twitter.png" alt="Twitter"></a></li>
-      <li><a href="" class="icon-element" type="button"><img src="./images/social-icons/hero-section/medium.png" alt="Medium"></a></li>
-    </ul>
-  </section>
+    <section class="grid-container">
+      
+      <!-- No pop up here -->
 
-  <!-- FEATURE WORKS STARTS HERE -->
-  <section class="recent-works" id="portfolio">
-    <div class="recent-work-content">
-      <h2 class="works">My Recent Works</h2>
-      <img class="horizontal-line" src="./images/hr-line.png" alt="Horizontal Line">
-    </div>
+      <section class="headline">
 
-    <div class="project-container">
-      <img class="project-image" src="./images/works/first_work.svg" alt="project-image">
-      <div class="project-detail">
-        <h2 class="project-title">Multi-Post Stories</h2>
-        <p class="project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-        <ul class="lang-container">
-          <li class="lang-item lang-css">css</li>
-          <li class="lang-item lang-html">html</li>
-          <li class="lang-item lang-bootstrap">bootstrap</li>
-          <li class="lang-item lang-ruby">Ruby</li>
+        <ul class="headline-title">
+
+          <li>
+            <h1 class="headline-primary-text">Hey There.<br />I’m Kennedy</h1>
+          </li>
+
+          <li>
+            <h2 class="headline-supporting">I’m a Software Developer</h2>
+          </li>
+
+          <li>
+            <p class="description" style="color: #fff;">
+              I can help you build a product, feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hesitate to contact me.
+            </p>
+          </li>
+
         </ul>
-        <button type="button" class="project-button buttons">See Project</button>
-      </div>
-    </div>
 
-    <section class="card-grid-container">
+        <ul class="social-media-icon">
 
-      <div class="card-project-container card-grid-item1">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
+          <li>
+            <a href="#"><img src="./images/social-media-icons/github-light.svg" alt="Github Icon" /></a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/social-media-icons/linkedin-light.svg" alt="LinkedIn Icon"
+            />
+          </a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/social-media-icons/angellist-light.svg" alt="Angelist Icon"
+            />
+          </a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/twitter-light.svg" alt="Twitter Icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/medium-light.svg" alt="Medium Icon" />
+            </a>
+          </li>
+
         </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+        
+      </section>
 
-      <div class="card-project-container card-grid-item2">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
-        </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+      <!-- Pop up here -->
 
-      <div class="card-project-container card-grid-item3">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
-        </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+      <section class="projects" id="portfolio">
+        <h1 class="last-project-title">My Recent Works</h1>
+        <hr class="last-project-line" />
+        <article class="last-project">
+          <!-- Use JavaScript to dynamically generates the content here -->
+        </article>
 
-      <div class="card-project-container card-grid-item4">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
-        </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+        <section class="other-projects" id="other-projects-section">
+          <!-- Use JavaScript to dynamically generates the content here -->
+        </section>
+      </section>
 
-      <div class="card-project-container card-grid-item5">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
-        </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+      <!-- No Need for Pop up here -->
+      <!-- ABOUT ME STARTS HERE -->
 
-      <div class="card-project-container card-grid-item6">
-        <h2 class="card-project-item card-project-title">Professional Art Printing Data</h2>
-        <p class="card-project-item card-project-para">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-        <ul class="card-project-item card-lang-container">
-          <li class="card-lang-item card-lang-html">html</li>
-          <li class="card-lang-item card-lang-bootstrap">bootstrap</li>
-          <li class="card-lang-item card-lang-ruby">Ruby</li>
+      <section class="about-me-page" id="about">
+
+        <h2 class="about-me-primary-text">About me</h2>
+
+        <p class="about-me-description">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hesitate to
+          contact me.
+        </p>
+
+        <button class="project-buttons">Get My Resume</button>
+
+        <hr />
+
+        <ul class="all-skill-set">
+
+          <li>
+            <img src="./images/all-desktop/rectangle.svg" alt="Rectangle Shape" /> Language
+
+            <ul class="all-skill-set-item">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+          </li>
+
         </ul>
-        <button type="button" class="card-project-item card-project-button buttons">See Project</button>
-      </div>
+
+        <ul class="all-skill-set">
+
+          <li>
+
+            <img src="./images/all-desktop/square.svg" alt="Square Shape" /> Frameworks
+            <ul class="all-skill-set-item">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="all-skill-set">
+
+          <li>
+
+            <img src="./images/all-desktop/circle.svg" alt="Circle Shape" /> Skills
+
+            <ul class="all-skill-set-item">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
+        </ul>
+
+      </section>
+
+      <!-- No Need for Pop up here -->
+      <!-- CONTACT FORM STARTS HERE -->
+      <section class="contact-form-here" id="contact">
+
+        <h2 class="primary-text">
+          <span> I'm always interested in hearing about new projects, so if you'd like to chat
+            please get in touch.</span
+          >
+        </h2>
+
+        <form action="https://formspree.io/f/xbjbpojv" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+            class="text-input-box"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="text-input-box"
+            required
+          />
+          <textarea
+            class="text-area"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+            maxlength="500"
+            required
+          ></textarea>
+          <button type="submit" class="project-buttons">Get in touch</button>
+        </form>
+      </section>
+
+      <!-- No pop up here For Footer -->
+      <footer>
+        <hr class="hori-line hori-line-desktop" />
+
+        <ul class="footer-social footer-social-desktop">
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/github-dark.svg" alt="Github Icon" /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/linkedin-dark.svg" alt="LinkedIn Icon" /></a>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/social-media-icons/angellist-dark.svg" alt="Angelist Icon"
+            />
+            </a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/twitter-dark.svg" alt="Twitter Icon" /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="./images/social-media-icons/medium-dark.svg" alt="Medium Icon" /></a>
+          </li>
+
+        </ul>
+
+        <img src="./images/all-mobile-images/horizontal-line.svg" alt="" class="black-line" />
+      </footer>
 
     </section>
-    
-  </section>
 
-  <section class="about-ken" id="about">
-    <div class="about-ken-inside">
-      <div class="about-ken-container">
-        <h2 class="about-me-title">About me</h2>
-        <p class="about-me-para">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-        <button type="button" class="about-ken-button buttons">Get My Resume</button>
-      </div>
-      <hr class="about-ken-hr-line">
-      <div class="l-f-s">
+    <script src="script.js"></script>
 
-        <ul class="language">
-          <li class="langu-item lang-title1"><img class="lang-image" src="./images/shapes/rectangle.svg" alt="lang">Language</li>
-          <li class="langu-item lang-js1">Javascript</li>
-          <li class="langu-item lang-ruby1">Ruby</li>
-          <li class="langu-item lang-html1">Html</li>
-          <li class="langu-item lang-Css1">Css</li>
-        </ul>
-
-        <ul class="frameworks">
-          <li class="frameworks-item frameworks-title"><img class="frameworks-image" src="./images/shapes/square.svg" alt="frameworks">Frameworks</li>
-          <li class="frameworks-item frameworks-bs">Bootstrap</li>
-          <li class="frameworks-item frameworks-ror">Ruby on Rails</li>
-          <li class="frameworks-item frameworks-rs">RSPec</li>
-          <li class="frameworks-item frameworks-cb">CsapyBara</li>
-          <li class="frameworks-item frameworks-sl">Selenium</li>
-        </ul>
-
-        <ul class="skills">
-          <li class="skills-item skills-title"><img class="skills-image" src="./images/shapes/circle.svg" alt="skills">Skills</li>
-          <li class="skills-item skills-ck">Codekit</li>
-          <li class="skills-item skills-gh">Github</li>
-          <li class="skills-item skills-cp">Codepen</li>
-          <li class="skills-item skills-gl">Gitlab</li>
-          <li class="skills-item skills-tm">Terminal</li>
-        </ul>
-
-      </div>
-    </div>
-  </section>
-
-  <footer class="contact-us" id="contact">
-    <h2 class="cont-para">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-
-    <form class="form" action="https://formspree.io/f/xbjbpojv" method="post">
-
-      <fieldset class="form-fieldset">
-
-        <input type="text" name="Full Name" class="form-text" placeholder="Full name" maxlength="30" required id="fName" onkeyup="validateName()"/>
-
-        <input type="email" name="Email" class="form-text email_address" placeholder="Email address" required required id="userEmail" onkeyup="validateEmail()"/>
-
-        <textarea name="Message" maxlength="500" class="form-text form-msg" required placeholder="Enter text here"></textarea>
-
-        <input type="submit" id="form-submit" class="submit_btn" name="submit" value="Get in touch"/>
-
-        <span class="validation_message"></span>
-
-      </fieldset>
-    </form>
-
-    <div class="social-media-icons">
-      <hr class="footer-line"/>
-      <ul class="icon-container form-icon-container">
-        <li><a href="" class="icon-element form-icon-element" type="button"><img src="./images/social-icons/footer/footer-github.png" alt="Github"></a></li>
-        <li><a href="" class="icon-element form-icon-element" type="button"><img src="./images/social-icons/footer/footer-linkedIn.png" alt="LinkedIn"></a></li>
-        <li><a href="" class="icon-element form-icon-element" type="button"><img src="./images/social-icons/footer/footer-angelist.png" alt="Angelist"></a></li>
-        <li><a href="" class="icon-element form-icon-element" type="button"><img src="./images/social-icons/footer/footer-twitter.png" alt="Twitter"></a></li>
-        <li><a href="" class="icon-element form-icon-element" type="button"><img src="./images/social-icons/footer/footer-medium.png" alt="Medium"></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  </body>
 
 </html>
