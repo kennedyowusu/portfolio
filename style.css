@@ -3,10 +3,10 @@ body {
 }
 
 .form-fieldset span {
-  /* position: absolute; */
   bottom: 12px;
   right: 17px;
   font-size: 14px;
+  font-weight: bold;
   color: red;
 }
 
