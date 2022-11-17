@@ -18,7 +18,7 @@ const extraProjects = [
     sourceLink: '#',
   },
   {
-    name: 'Professional Art Printing Data',
+    name: 'Professional Art Printing',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     image: 'images/all-mobile-images/project1.svg',
@@ -40,7 +40,7 @@ const extraProjects = [
     name: 'A Detail Info Here',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: 'images/mobile/project1.svg',
+    image: 'images/all-mobile-images/project1.svg',
     technologies: ['html', 'javascript', 'css', 'Ruby'],
     liveLink: '#',
     sourceLink: '#',
@@ -80,8 +80,6 @@ function showPopup() {
   document.querySelector('.navbar-holder').style.filter = 'blur(5px)';
 }
 
-/* ----------------- Building Popup (Mobile) ---------------- */
-
 const popupSection = document.querySelector('.popup');
 const popupX = document.createElement('img');
 popupX.src = 'images/all-mobile-images/cancel.svg';
@@ -110,8 +108,6 @@ popupSection.append(
   sourceButton,
 );
 
-/* ----------------- Binding Popup (Mobile) ---------------- */
-
 function bindPopup(projectNumber) {
   popupName.innerText = extraProjects[projectNumber].name;
   popupUl.innerHTML = '';
@@ -127,8 +123,6 @@ function bindPopup(projectNumber) {
   popupDescription.innerText = extraProjects[projectNumber].description;
   showPopup();
 }
-
-/* ----------------- Building LAST project part (Mobile) ---------------- */
 
 const lastProjectsArticle = document.querySelector('.last-project');
 const imgMobile = document.createElement('img');
@@ -164,8 +158,6 @@ lastProjectInnerSection.append(
   lastProjectUl,
   lastProjectButton,
 );
-
-/* ----------------- Building OTHER projects part (Mobile) ---------------- */
 
 const otherProjectsSection = document.getElementById('other-projects-section');
 for (let index = 1; index < extraProjects.length; index += 1) {

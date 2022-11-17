@@ -16,7 +16,7 @@ p {
   margin: 0;
 }
 
-/* ----------------- Mobile ⬇️ ---------------- */
+/* ----------------- Mobile Version Starts Here ---------------- */
 
 .desktop-images,
 .desktop-version {
@@ -29,8 +29,6 @@ p {
   height: 6968px;
   width: 375px;
 }
-
-/* ----------------- Mobile Menu ---------------- */
 
 .mobile-nav-icon {
   background-color: #3c3a39;
@@ -92,8 +90,6 @@ p {
   color: #fff5e1;
 }
 
-/* ----------------- Toolbar Mobile ---------------- */
-
 .navbar-holder {
   background: #3c3a39;
   height: 46px;
@@ -118,8 +114,6 @@ p {
   margin-left: 24px;
   margin-top: 16px;
 }
-
-/* ----------------- Headline Mobile ---------------- */
 
 .headline {
   display: flex;
@@ -178,23 +172,10 @@ p {
   margin-left: 25px;
 }
 
-/* ----------------- Last Project Mobile ---------------- */
-
 .projects {
   background-color: #fff;
   height: 3750px;
   width: 375px;
-}
-
-.last-project-title {
-  font-family: "Crete Round", serif;
-  color: #091e42;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-  margin-top: 135px;
-  text-align: center;
 }
 
 .last-project-line {
@@ -272,13 +253,13 @@ p {
   color: #091e42;
 }
 
-/* ----------------- Popup Mobile ---------------- */
-
 .popup {
   display: none;
   position: fixed;
   width: 343px;
-  height: 65%;
+  height: 97%;
+  margin-bottom: -20%;
+  margin-top: -20px;
   margin-left: 4%;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -380,8 +361,6 @@ p {
   right: 15px;
 }
 
-/* ----------------- Other Projects Mobile ---------------- */
-
 .other-projects-item {
   display: flex;
   flex-direction: column;
@@ -457,8 +436,6 @@ p {
   margin-right: 40px;
   color: #fff;
 }
-
-/* ----------------- About Me Mobile ---------------- */
 
 .about-me-page {
   background: #1c1a19;
@@ -551,8 +528,6 @@ p {
   padding-left: 0;
   margin-left: 0;
 }
-
-/* ----------------- Contact Mobile ---------------- */
 
 .contact-form-here {
   background-color: #fff;
@@ -651,25 +626,16 @@ textarea::-webkit-input-placeholder {
   display: block;
 }
 
-/* ----------------- Button Behaviour ---------------- */
-
 .project-buttons {
   border: none;
-}
-
-.project-buttons:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
 }
 
 .project-buttons:active {
   background: #e05304;
   color: #f4f1f0;
-  border: none;
 }
 
-/* ----------------- Desktop ⬇️ ---------------- */
+/* ----------------- Desktop Version Starts Here ---------------- */
 
 @media screen and (min-width: 768px) {
   nav,
@@ -694,8 +660,6 @@ textarea::-webkit-input-placeholder {
     max-width: 1440px;
     height: 4561px;
   }
-
-  /* ----------------- Toolbar Desktop ---------------- */
 
   .navbar-holder {
     background: #3c3a39;
@@ -733,8 +697,6 @@ textarea::-webkit-input-placeholder {
   .desktop-right-menu-item:nth-child(4) {
     margin-right: 10vw;
   }
-
-  /* ----------------- Headline Desktop ---------------- */
 
   .headline {
     display: flex;
@@ -799,12 +761,10 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 23px;
   }
 
-  /* ----------------- Popup Desktop ---------------- */
-
   .popup {
     display: none;
     width: 1156px;
-    height: 57%;
+    height: 70%;
     margin-left: 142px;
     background: #fff;
     border: 1px solid #ebecf0;
@@ -905,8 +865,6 @@ textarea::-webkit-input-placeholder {
     left: 800px;
   }
 
-  /* ----------------- Last Project Desktop ---------------- */
-
   .projects {
     background-color: #fff;
     height: 1890px;
@@ -917,18 +875,6 @@ textarea::-webkit-input-placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-  }
-
-  .last-project-title {
-    font-family: "Crete Round", serif;
-    color: #091e42;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    margin-top: 135px;
-    margin-left: 153px;
-    text-align: left;
   }
 
   .last-project-items > li {
@@ -1036,8 +982,6 @@ textarea::-webkit-input-placeholder {
     width: 64%;
   }
 
-  /* ----------------- Other Projects Desktop ---------------- */
-
   .other-projects {
     display: grid;
     gap: 24px;
@@ -1136,8 +1080,6 @@ textarea::-webkit-input-placeholder {
     color: #fff;
   }
 
-  /* ----------------- About Me Desktop ---------------- */
-
   .about-me-page {
     background: #262626;
     background-image: url(./images/all-desktop/about-me-desktop.svg);
@@ -1225,8 +1167,6 @@ textarea::-webkit-input-placeholder {
     color: #fff;
     text-align: left;
   }
-
-  /* ----------------- Contact Desktop ---------------- */
 
   .contact-form-here {
     background-color: #fff;
@@ -1341,9 +1281,5 @@ textarea::-webkit-input-placeholder {
 
   .other-projects-item:hover .supporting-text {
     display: none;
-  }
-
-  .other-projects-item:hover {
-    background-image: url(./images/all-desktop/project1-highlight.svg);
   }
 }
