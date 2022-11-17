@@ -26,3 +26,16 @@ Array.from(menuItem).forEach((element) => {
     navMenu.classList.toggle('active');
   });
 });
+
+const contactForm = document.querySelector('.form');
+const emailInput = document.querySelector('.email_address');
+const validationMessage = document.querySelector('.validation_message');
+
+contactForm.addEventListener('submit', (event) => {
+  const emailAddressInput = emailInput.value;
+  if (/[A-Z]/.test(emailAddressInput)) {
+    validationMessage.innerHTML = 'Your Email Address should not contain Upper Case letters';
+    validationMessage.classList.add('shake');
+    event.preventDefault();
+  }
+});

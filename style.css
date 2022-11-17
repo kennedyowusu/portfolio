@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+.form-fieldset span {
+  /* position: absolute; */
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
 @media screen and (max-width: 480px) {
   body,
   html {

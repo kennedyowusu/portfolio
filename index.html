@@ -204,13 +204,15 @@
 
       <fieldset class="form-fieldset">
 
-        <input type="text" name="Full Name" class="form-text" placeholder="Full name" maxlength="30" required/>
-        
-        <input type="email" name="Email" class="form-text" placeholder="Email address" required/>
+        <input type="text" name="Full Name" class="form-text" placeholder="Full name" maxlength="30" required id="fName" onkeyup="validateName()"/>
+
+        <input type="email" name="Email" class="form-text email_address" placeholder="Email address" required required id="userEmail" onkeyup="validateEmail()"/>
 
         <textarea name="Message" maxlength="500" class="form-text form-msg" required placeholder="Enter text here"></textarea>
 
-        <input type="submit" id="form-submit" name="submit" value="Get in touch"/>
+        <input type="submit" id="form-submit" class="submit_btn" name="submit" value="Get in touch"/>
+
+        <span class="validation_message"></span>
 
       </fieldset>
     </form>
