@@ -204,3 +204,45 @@ function dismissMobileMenu() {
 
 hamburgerIcon.addEventListener('click', openMobileMenu());
 cancelIcon.addEventListener('click', dismissMobileMenu());
+
+// Store Data Locally
+
+function storeUserDataLocally(uName, uEmail, uComment) {
+  const userObject = {
+    name: uName,
+    email: uEmail,
+    message: uComment,
+  };
+  localStorage.setItem(1, JSON.stringify(userObject));
+}
+
+const form = document.getElementById('query-form');
+const errorMessage = document.getElementById('error');
+const fName = form.elements[0];
+const uEmail = form.elements[1];
+const uMessage = form.elements[2];
+form.onsubmit = (event) => {
+  if (uEmail.value !== uEmail.value.toLowerCase()) {
+    errorMessage.innerText = 'Email Address must be in lowercase only!';
+    event.preventDefault();
+  } else {
+    storeUserDataLocally(fName.value, uEmail.value, uMessage.value);
+  }
+};
+
+const savedData = JSON.parse(localStorage.getItem(1));
+if (savedData !== null) {
+  fName.value = savedData.name;
+  uEmail.value = savedData.email;
+  uMessage.value = savedData.message;
+}
+
+// const resetFunc = () => {
+//   fName.value = '';
+//   uEmail.value = '';
+//   uMessage.value = '';
+//   localStorage.clear();
+// };
+
+// const resetButton = document.getElementById('reset-form');
+// resetButton.addEventListener('click', resetFunc);

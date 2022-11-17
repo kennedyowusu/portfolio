@@ -238,7 +238,7 @@
           >
         </h2>
 
-        <form action="https://formspree.io/f/xbjbpojv" method="POST">
+        <form action="https://formspree.io/f/xbjbpojv" method="POST" id="query-form">
           <input
             type="text"
             name="name"
@@ -246,6 +246,7 @@
             class="text-input-box"
             maxlength="30"
             required
+            id="fName"
           />
           <input
             type="email"
@@ -253,18 +254,25 @@
             placeholder="Email address"
             class="text-input-box"
             required
+            id="uEmail"
           />
           <textarea
             class="text-area"
             name="message"
-            id=""
+            id="uMessage"
             cols="30"
             rows="10"
             placeholder="Enter text here"
             maxlength="500"
             required
           ></textarea>
+
+          <label for="" id="error"> </label>
+
           <button type="submit" class="project-buttons">Get in touch</button>
+
+          <!-- <button type="button" class="my-buttons" id="reset-form"> Reset Form </button> -->
+
         </form>
       </section>
 
